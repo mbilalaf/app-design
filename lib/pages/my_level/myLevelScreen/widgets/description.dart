@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Description extends StatelessWidget {
   const Description({
@@ -18,8 +19,7 @@ class Description extends StatelessWidget {
       children: [
         Text(
           title,
-          style: const TextStyle(
-            fontFamily: 'Sansation',
+          style: GoogleFonts.roboto(
             color: Colors.white,
             fontSize: 17,
             fontWeight: FontWeight.w700,
@@ -28,8 +28,7 @@ class Description extends StatelessWidget {
         const SizedBox(height: 10),
         Text(
           description,
-          style: const TextStyle(
-            fontFamily: 'Sansation',
+          style: GoogleFonts.roboto(
             color: Colors.white,
             fontSize: 15,
             fontWeight: FontWeight.w400,

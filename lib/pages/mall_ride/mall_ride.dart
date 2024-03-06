@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:maaz_design/pages/charm_level_body/charm_level_body.dart';
-import 'package:maaz_design/pages/wealth_level_body/wealth_level_body.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:maaz_design/pages/my_level/charm_level_body/charm_level_body.dart';
+import 'package:maaz_design/pages/mall_ride/headwear_body.dart/headwear_body.dart';
+import 'package:maaz_design/pages/mall_ride/rider_body/rider_body.dart';
+import 'package:maaz_design/pages/my_level/wealth_level_body/wealth_level_body.dart';
 import 'package:maaz_design/utils/app_colors.dart';
+import 'package:maaz_design/widgets/back_arrow.dart';
 import 'package:maaz_design/widgets/tabbar.dart';
 
-class MyLevelPage extends StatefulWidget {
-  const MyLevelPage({super.key});
+class MallRidePage extends StatefulWidget {
+  const MallRidePage({super.key});
 
   @override
-  State<MyLevelPage> createState() => _MyLevelPageState();
+  State<MallRidePage> createState() => _MallRidePageState();
 }
 
-class _MyLevelPageState extends State<MyLevelPage>
+class _MallRidePageState extends State<MallRidePage>
     with SingleTickerProviderStateMixin {
   late TabController tabController;
   @override
@@ -27,10 +31,12 @@ class _MyLevelPageState extends State<MyLevelPage>
       appBar: AppBar(
         backgroundColor: AppColors.darkPurpule,
         centerTitle: true,
-        title: const Text(
-          'My Level',
-          style: TextStyle(
-            fontFamily: 'Sansation',
+        leading: const BackArrow(),
+        title: Text(
+          'Mall',
+          style: GoogleFonts.roboto(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
         ),
@@ -43,8 +49,8 @@ class _MyLevelPageState extends State<MyLevelPage>
               child: Tabbarwidget(
                 tabController: tabController,
                 tabs: const [
-                  Tab(text: 'Wealth Level'),
-                  Tab(text: 'Charm Level'),
+                  Tab(text: 'Headwear'),
+                  Tab(text: 'Ride'),
                 ],
               ),
             ),
@@ -52,8 +58,8 @@ class _MyLevelPageState extends State<MyLevelPage>
               child: TabBarView(
                 controller: tabController,
                 children: const [
-                  WealthLevelBody(),
-                  CharmLevelBody(),
+                  HeadwearBody(),
+                  RiderBody(),
                 ],
               ),
             ),

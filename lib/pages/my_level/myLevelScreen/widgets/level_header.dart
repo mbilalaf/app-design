@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:maaz_design/utils/app_colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LevelHeader extends StatelessWidget {
   const LevelHeader({
@@ -47,13 +47,12 @@ class LevelHeader extends StatelessWidget {
             ),
           ),
         ),
-        const Positioned(
+        Positioned(
           top: 40,
           right: 140,
           child: Text(
             'Hamza1122',
-            style: TextStyle(
-              fontFamily: 'Sansation',
+            style: GoogleFonts.roboto(
               color: Colors.white,
               fontSize: 15,
               fontWeight: FontWeight.w700,
@@ -66,10 +65,9 @@ class LevelHeader extends StatelessWidget {
           right: 14,
           child: Row(
             children: [
-              const Text(
+              Text(
                 'Lv.0',
-                style: TextStyle(
-                  fontFamily: 'Sansation',
+                style: GoogleFonts.roboto(
                   color: Colors.white,
                   fontSize: 15,
                   fontWeight: FontWeight.w700,
@@ -99,10 +97,9 @@ class LevelHeader extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 10),
-              const Text(
+              Text(
                 'Lv.1',
-                style: TextStyle(
-                  fontFamily: 'Sansation',
+                style: GoogleFonts.roboto(
                   color: Colors.white,
                   fontSize: 15,
                   fontWeight: FontWeight.w700,
@@ -115,10 +112,9 @@ class LevelHeader extends StatelessWidget {
           top: 125,
           right: MediaQuery.sizeOf(context).width * 0.1,
           left: MediaQuery.sizeOf(context).width * 0.1,
-          child: const Text(
+          child: Text(
             'To the next level need 200.0 experience points',
-            style: TextStyle(
-              fontFamily: 'Sansation',
+            style: GoogleFonts.roboto(
               color: Colors.white,
               fontSize: 11,
               fontWeight: FontWeight.w400,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:maaz_design/utils/app_colors.dart';
 
 class LevelTile extends StatelessWidget {
@@ -31,8 +32,7 @@ class LevelTile extends StatelessWidget {
           children: [
             Text(
               'Lvl  ( $level )',
-              style: const TextStyle(
-                fontFamily: 'Sansation',
+              style: GoogleFonts.roboto(
                 color: Colors.white,
                 fontSize: 15,
                 fontWeight: FontWeight.w400,
@@ -53,8 +53,7 @@ class LevelTile extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 14),
                       child: Text(
                         levelNo,
-                        style: const TextStyle(
-                          fontFamily: 'Sansation',
+                        style: GoogleFonts.roboto(
                           color: Colors.white,
                           fontSize: 16,
                           fontWeight: FontWeight.w700,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:maaz_design/utils/app_colors.dart';
 
 class Tabbarwidget extends StatelessWidget {
@@ -25,8 +26,7 @@ class Tabbarwidget extends StatelessWidget {
         tabs: tabs,
         labelColor: Colors.white,
         unselectedLabelColor: Colors.white,
-        labelStyle: const TextStyle(
-          fontFamily: 'Sansation',
+        labelStyle: GoogleFonts.roboto(
           color: Colors.grey,
           fontSize: 15,
           fontWeight: FontWeight.w600,

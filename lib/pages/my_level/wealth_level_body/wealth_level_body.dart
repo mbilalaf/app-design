@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:maaz_design/pages/myLevelScreen/widgets/description.dart';
-import 'package:maaz_design/pages/myLevelScreen/widgets/level_tile.dart';
+import 'package:maaz_design/pages/mall_ride/mall_ride.dart';
+import 'package:maaz_design/pages/my_level/myLevelScreen/widgets/description.dart';
+import 'package:maaz_design/pages/my_level/myLevelScreen/level_tile.dart';
 import 'package:maaz_design/utils/app_colors.dart';
 import '../myLevelScreen/widgets/level_header.dart';
 
@@ -17,9 +18,19 @@ class WealthLevelBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Header
-            LevelHeader(
-              colorOne: AppColors.primaryColor.withOpacity(0.5),
-              colorTwo: AppColors.primaryColor,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MallRidePage(),
+                  ),
+                );
+              },
+              child: LevelHeader(
+                colorOne: AppColors.primaryColor.withOpacity(0.5),
+                colorTwo: AppColors.primaryColor,
+              ),
             ),
             const SizedBox(height: 25),
 

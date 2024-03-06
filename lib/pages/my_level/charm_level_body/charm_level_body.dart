@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:maaz_design/pages/myLevelScreen/widgets/description.dart';
-import 'package:maaz_design/pages/myLevelScreen/widgets/level_tile.dart';
+import 'package:maaz_design/pages/my_level/myLevelScreen/widgets/description.dart';
+import 'package:maaz_design/pages/my_level/myLevelScreen/level_tile.dart';
 import 'package:maaz_design/utils/app_colors.dart';
 import '../myLevelScreen/widgets/level_header.dart';
 

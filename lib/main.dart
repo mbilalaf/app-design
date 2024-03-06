@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:maaz_design/pages/my_level.dart';
+import 'package:maaz_design/pages/my_level/my_level.dart';
 
 void main() {
   runApp(const MyApp());
